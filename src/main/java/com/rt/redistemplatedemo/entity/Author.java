@@ -1,10 +1,11 @@
 package com.rt.redistemplatedemo.entity;
 
 import lombok.Data;
-import org.springframework.data.redis.core.RedisHash;
+
+import java.io.Serializable;
 
 @Data
-public class Author {
+public class Author implements Serializable {
     String name;
     int age;
 }
